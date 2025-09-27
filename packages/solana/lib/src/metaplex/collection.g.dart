@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'collection.dart';
 
@@ -10,7 +10,5 @@ part of 'collection.dart';
 Collection _$CollectionFromJson(Map<String, dynamic> json) =>
     Collection(name: json['name'] as String, family: json['family'] as String);
 
-Map<String, dynamic> _$CollectionToJson(Collection instance) => <String, dynamic>{
-  'name': instance.name,
-  'family': instance.family,
-};
+Map<String, dynamic> _$CollectionToJson(Collection instance) =>
+    <String, dynamic>{'name': instance.name, 'family': instance.family};

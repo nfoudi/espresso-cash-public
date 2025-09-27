@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'error_message.dart';
 
@@ -12,7 +12,5 @@ ErrorMessage _$ErrorMessageFromJson(Map<String, dynamic> json) => ErrorMessage(
   id: (json['id'] as num).toInt(),
 );
 
-Map<String, dynamic> _$ErrorMessageToJson(ErrorMessage instance) => <String, dynamic>{
-  'error': instance.error.toJson(),
-  'id': instance.id,
-};
+Map<String, dynamic> _$ErrorMessageToJson(ErrorMessage instance) =>
+    <String, dynamic>{'error': instance.error.toJson(), 'id': instance.id};

@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'epoch_schedule.dart';
 
@@ -7,18 +7,21 @@ part of 'epoch_schedule.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-EpochSchedule _$EpochScheduleFromJson(Map<String, dynamic> json) => EpochSchedule(
-  slotsPerEpoch: (json['slotsPerEpoch'] as num).toInt(),
-  leaderScheduleSlotOffset: (json['leaderScheduleSlotOffset'] as num).toInt(),
-  warmup: json['warmup'] as bool,
-  firstNormalEpoch: (json['firstNormalEpoch'] as num).toInt(),
-  firstNormalSlot: (json['firstNormalSlot'] as num).toInt(),
-);
+EpochSchedule _$EpochScheduleFromJson(Map<String, dynamic> json) =>
+    EpochSchedule(
+      slotsPerEpoch: (json['slotsPerEpoch'] as num).toInt(),
+      leaderScheduleSlotOffset: (json['leaderScheduleSlotOffset'] as num)
+          .toInt(),
+      warmup: json['warmup'] as bool,
+      firstNormalEpoch: (json['firstNormalEpoch'] as num).toInt(),
+      firstNormalSlot: (json['firstNormalSlot'] as num).toInt(),
+    );
 
-Map<String, dynamic> _$EpochScheduleToJson(EpochSchedule instance) => <String, dynamic>{
-  'slotsPerEpoch': instance.slotsPerEpoch,
-  'leaderScheduleSlotOffset': instance.leaderScheduleSlotOffset,
-  'warmup': instance.warmup,
-  'firstNormalEpoch': instance.firstNormalEpoch,
-  'firstNormalSlot': instance.firstNormalSlot,
-};
+Map<String, dynamic> _$EpochScheduleToJson(EpochSchedule instance) =>
+    <String, dynamic>{
+      'slotsPerEpoch': instance.slotsPerEpoch,
+      'leaderScheduleSlotOffset': instance.leaderScheduleSlotOffset,
+      'warmup': instance.warmup,
+      'firstNormalEpoch': instance.firstNormalEpoch,
+      'firstNormalSlot': instance.firstNormalSlot,
+    };

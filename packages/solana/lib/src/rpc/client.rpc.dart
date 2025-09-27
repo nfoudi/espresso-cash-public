@@ -1,7 +1,7 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // dart format width=80
 
+// @dart=3.9
 part of 'client.dart';
 
 // **************************************************************************

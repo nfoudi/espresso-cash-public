@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'supply.dart';
 
@@ -28,7 +28,8 @@ SupplyResult _$SupplyResultFromJson(Map<String, dynamic> json) => SupplyResult(
   value: Supply.fromJson(json['value'] as Map<String, dynamic>),
 );
 
-Map<String, dynamic> _$SupplyResultToJson(SupplyResult instance) => <String, dynamic>{
-  'context': instance.context.toJson(),
-  'value': instance.value.toJson(),
-};
+Map<String, dynamic> _$SupplyResultToJson(SupplyResult instance) =>
+    <String, dynamic>{
+      'context': instance.context.toJson(),
+      'value': instance.value.toJson(),
+    };

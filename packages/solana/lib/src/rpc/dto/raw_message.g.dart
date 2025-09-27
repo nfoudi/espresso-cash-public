@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'raw_message.dart';
 
@@ -8,7 +8,9 @@ part of 'raw_message.dart';
 // **************************************************************************
 
 RawMessage _$RawMessageFromJson(Map<String, dynamic> json) => RawMessage(
-  accountKeys: (json['accountKeys'] as List<dynamic>).map(AccountKey.fromJson).toList(),
+  accountKeys: (json['accountKeys'] as List<dynamic>)
+      .map(AccountKey.fromJson)
+      .toList(),
   header: json['header'] == null ? null : Header.fromJson(json['header']),
   recentBlockhash: json['recentBlockhash'] as String,
   instructions: (json['instructions'] as List<dynamic>)
@@ -19,10 +21,13 @@ RawMessage _$RawMessageFromJson(Map<String, dynamic> json) => RawMessage(
       .toList(),
 );
 
-Map<String, dynamic> _$RawMessageToJson(RawMessage instance) => <String, dynamic>{
-  'accountKeys': instance.accountKeys.map((e) => e.toJson()).toList(),
-  'header': instance.header?.toJson(),
-  'recentBlockhash': instance.recentBlockhash,
-  'instructions': instance.instructions.map((e) => e.toJson()).toList(),
-  'addressTableLookups': instance.addressTableLookups?.map((e) => e.toJson()).toList(),
-};
+Map<String, dynamic> _$RawMessageToJson(RawMessage instance) =>
+    <String, dynamic>{
+      'accountKeys': instance.accountKeys.map((e) => e.toJson()).toList(),
+      'header': instance.header?.toJson(),
+      'recentBlockhash': instance.recentBlockhash,
+      'instructions': instance.instructions.map((e) => e.toJson()).toList(),
+      'addressTableLookups': instance.addressTableLookups
+          ?.map((e) => e.toJson())
+          .toList(),
+    };

@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'transaction_signature_information.dart';
 
@@ -15,7 +15,10 @@ TransactionSignatureInformation _$TransactionSignatureInformationFromJson(
   err: json['err'] as Map<String, dynamic>?,
   memo: json['memo'] as String?,
   blockTime: (json['blockTime'] as num?)?.toInt(),
-  confirmationStatus: $enumDecodeNullable(_$CommitmentEnumMap, json['confirmationStatus']),
+  confirmationStatus: $enumDecodeNullable(
+    _$CommitmentEnumMap,
+    json['confirmationStatus'],
+  ),
 );
 
 Map<String, dynamic> _$TransactionSignatureInformationToJson(

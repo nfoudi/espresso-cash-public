@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'create_master_edition.dart';
 
@@ -35,7 +35,9 @@ class BCreateMasterEditionV3Data implements BType<CreateMasterEditionV3Data> {
 
   @override
   CreateMasterEditionV3Data read(BinaryReader reader) {
-    return CreateMasterEditionV3Data(maxSupply: const BOption(BU64()).read(reader));
+    return CreateMasterEditionV3Data(
+      maxSupply: const BOption(BU64()).read(reader),
+    );
   }
 }
 

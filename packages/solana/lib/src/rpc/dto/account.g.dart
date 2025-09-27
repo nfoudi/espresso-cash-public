@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'account.dart';
 
@@ -7,29 +7,37 @@ part of 'account.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-AccountResult _$AccountResultFromJson(Map<String, dynamic> json) => AccountResult(
-  context: Context.fromJson(json['context'] as Map<String, dynamic>),
-  value: json['value'] == null ? null : Account.fromJson(json['value'] as Map<String, dynamic>),
-);
-
-Map<String, dynamic> _$AccountResultToJson(AccountResult instance) => <String, dynamic>{
-  'context': instance.context.toJson(),
-  'value': instance.value?.toJson(),
-};
-
-MultipleAccountsResult _$MultipleAccountsResultFromJson(Map<String, dynamic> json) =>
-    MultipleAccountsResult(
+AccountResult _$AccountResultFromJson(Map<String, dynamic> json) =>
+    AccountResult(
       context: Context.fromJson(json['context'] as Map<String, dynamic>),
-      value: (json['value'] as List<dynamic>)
-          .map((e) => e == null ? null : Account.fromJson(e as Map<String, dynamic>))
-          .toList(),
+      value: json['value'] == null
+          ? null
+          : Account.fromJson(json['value'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$MultipleAccountsResultToJson(MultipleAccountsResult instance) =>
+Map<String, dynamic> _$AccountResultToJson(AccountResult instance) =>
     <String, dynamic>{
       'context': instance.context.toJson(),
-      'value': instance.value.map((e) => e?.toJson()).toList(),
+      'value': instance.value?.toJson(),
     };
+
+MultipleAccountsResult _$MultipleAccountsResultFromJson(
+  Map<String, dynamic> json,
+) => MultipleAccountsResult(
+  context: Context.fromJson(json['context'] as Map<String, dynamic>),
+  value: (json['value'] as List<dynamic>)
+      .map(
+        (e) => e == null ? null : Account.fromJson(e as Map<String, dynamic>),
+      )
+      .toList(),
+);
+
+Map<String, dynamic> _$MultipleAccountsResultToJson(
+  MultipleAccountsResult instance,
+) => <String, dynamic>{
+  'context': instance.context.toJson(),
+  'value': instance.value.map((e) => e?.toJson()).toList(),
+};
 
 _Account _$AccountFromJson(Map<String, dynamic> json) => _Account(
   lamports: (json['lamports'] as num).toInt(),

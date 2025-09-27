@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'blockhash.dart';
 
@@ -8,7 +8,9 @@ part of 'blockhash.dart';
 // **************************************************************************
 
 Blockhash _$BlockhashFromJson(Map<String, dynamic> json) => Blockhash(
-  feeCalculator: FeeCalculator.fromJson(json['feeCalculator'] as Map<String, dynamic>),
+  feeCalculator: FeeCalculator.fromJson(
+    json['feeCalculator'] as Map<String, dynamic>,
+  ),
   blockhash: json['blockhash'] as String,
 );
 
@@ -17,12 +19,15 @@ Map<String, dynamic> _$BlockhashToJson(Blockhash instance) => <String, dynamic>{
   'blockhash': instance.blockhash,
 };
 
-BlockhasValidResult _$BlockhasValidResultFromJson(Map<String, dynamic> json) => BlockhasValidResult(
-  context: Context.fromJson(json['context'] as Map<String, dynamic>),
-  value: json['value'] as bool,
-);
+BlockhasValidResult _$BlockhasValidResultFromJson(Map<String, dynamic> json) =>
+    BlockhasValidResult(
+      context: Context.fromJson(json['context'] as Map<String, dynamic>),
+      value: json['value'] as bool,
+    );
 
-Map<String, dynamic> _$BlockhasValidResultToJson(BlockhasValidResult instance) => <String, dynamic>{
+Map<String, dynamic> _$BlockhasValidResultToJson(
+  BlockhasValidResult instance,
+) => <String, dynamic>{
   'context': instance.context.toJson(),
   'value': instance.value,
 };

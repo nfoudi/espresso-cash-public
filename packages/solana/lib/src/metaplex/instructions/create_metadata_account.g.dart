@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'create_metadata_account.dart';
 
@@ -59,7 +59,8 @@ class _CreateMetadataAccountV3Data extends CreateMetadataAccountV3Data {
   final bool colectionDetails;
 }
 
-class BCreateMetadataAccountV3Data implements BType<CreateMetadataAccountV3Data> {
+class BCreateMetadataAccountV3Data
+    implements BType<CreateMetadataAccountV3Data> {
   const BCreateMetadataAccountV3Data();
 
   @override
@@ -83,7 +84,9 @@ class BCreateMetadataAccountV3Data implements BType<CreateMetadataAccountV3Data>
   }
 }
 
-CreateMetadataAccountV3Data _$CreateMetadataAccountV3DataFromBorsh(Uint8List data) {
+CreateMetadataAccountV3Data _$CreateMetadataAccountV3DataFromBorsh(
+  Uint8List data,
+) {
   final reader = BinaryReader(data.buffer.asByteData());
 
   return const BCreateMetadataAccountV3Data().read(reader);
@@ -106,8 +109,11 @@ mixin _$MetadataCreator {
 }
 
 class _MetadataCreator extends MetadataCreator {
-  _MetadataCreator({required this.address, required this.verified, required this.share})
-    : super._();
+  _MetadataCreator({
+    required this.address,
+    required this.verified,
+    required this.share,
+  }) : super._();
 
   final Ed25519HDPublicKey address;
   final bool verified;
@@ -199,8 +205,11 @@ mixin _$MetadataUses {
 }
 
 class _MetadataUses extends MetadataUses {
-  _MetadataUses({required this.useMethod, required this.remaining, required this.total})
-    : super._();
+  _MetadataUses({
+    required this.useMethod,
+    required this.remaining,
+    required this.total,
+  }) : super._();
 
   final int useMethod;
   final BigInt remaining;

@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'parsed_spl_token_instruction.dart';
 
@@ -18,12 +18,14 @@ Map<String, dynamic> _$ParsedSplTokenTransferInstructionToJson(
   ParsedSplTokenTransferInstruction instance,
 ) => <String, dynamic>{'info': instance.info.toJson(), 'type': instance.type};
 
-ParsedSplTokenTransferCheckedInstruction _$ParsedSplTokenTransferCheckedInstructionFromJson(
-  Map<String, dynamic> json,
-) => ParsedSplTokenTransferCheckedInstruction(
-  info: SplTokenTransferCheckedInfo.fromJson(json['info'] as Map<String, dynamic>),
-  type: json['type'] as String,
-);
+ParsedSplTokenTransferCheckedInstruction
+_$ParsedSplTokenTransferCheckedInstructionFromJson(Map<String, dynamic> json) =>
+    ParsedSplTokenTransferCheckedInstruction(
+      info: SplTokenTransferCheckedInfo.fromJson(
+        json['info'] as Map<String, dynamic>,
+      ),
+      type: json['type'] as String,
+    );
 
 Map<String, dynamic> _$ParsedSplTokenTransferCheckedInstructionToJson(
   ParsedSplTokenTransferCheckedInstruction instance,
@@ -31,7 +33,10 @@ Map<String, dynamic> _$ParsedSplTokenTransferCheckedInstructionToJson(
 
 ParsedSplTokenGenericInstruction _$ParsedSplTokenGenericInstructionFromJson(
   Map<String, dynamic> json,
-) => ParsedSplTokenGenericInstruction(info: json['info'], type: json['type'] as String);
+) => ParsedSplTokenGenericInstruction(
+  info: json['info'],
+  type: json['type'] as String,
+);
 
 Map<String, dynamic> _$ParsedSplTokenGenericInstructionToJson(
   ParsedSplTokenGenericInstruction instance,

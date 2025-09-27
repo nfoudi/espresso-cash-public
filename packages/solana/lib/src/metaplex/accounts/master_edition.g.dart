@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'master_edition.dart';
 
@@ -24,7 +24,8 @@ mixin _$MasterEdition {
 }
 
 class _MasterEdition extends MasterEdition {
-  _MasterEdition({required this.key, required this.supply, this.maxSupply}) : super._();
+  _MasterEdition({required this.key, required this.supply, this.maxSupply})
+    : super._();
 
   final int key;
   final BigInt supply;

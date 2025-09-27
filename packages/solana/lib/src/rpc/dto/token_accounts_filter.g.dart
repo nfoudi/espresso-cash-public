@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'token_accounts_filter.dart';
 
@@ -11,5 +11,6 @@ Map<String, dynamic> _$TokenAccountsFilterByProgramIdToJson(
   TokenAccountsFilterByProgramId instance,
 ) => <String, dynamic>{'programId': instance.programId};
 
-Map<String, dynamic> _$TokenAccountsFilterByMintToJson(TokenAccountsFilterByMint instance) =>
-    <String, dynamic>{'mint': instance.mint};
+Map<String, dynamic> _$TokenAccountsFilterByMintToJson(
+  TokenAccountsFilterByMint instance,
+) => <String, dynamic>{'mint': instance.mint};

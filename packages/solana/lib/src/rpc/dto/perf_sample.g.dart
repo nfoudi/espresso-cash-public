@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'perf_sample.dart';
 
@@ -14,9 +14,10 @@ PerfSample _$PerfSampleFromJson(Map<String, dynamic> json) => PerfSample(
   samplePeriodSecs: (json['samplePeriodSecs'] as num).toInt(),
 );
 
-Map<String, dynamic> _$PerfSampleToJson(PerfSample instance) => <String, dynamic>{
-  'slot': instance.slot,
-  'numTransactions': instance.numTransactions,
-  'numSlots': instance.numSlots,
-  'samplePeriodSecs': instance.samplePeriodSecs,
-};
+Map<String, dynamic> _$PerfSampleToJson(PerfSample instance) =>
+    <String, dynamic>{
+      'slot': instance.slot,
+      'numTransactions': instance.numTransactions,
+      'numSlots': instance.numSlots,
+      'samplePeriodSecs': instance.samplePeriodSecs,
+    };

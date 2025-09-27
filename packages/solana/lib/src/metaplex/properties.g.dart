@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'properties.dart';
 
@@ -7,7 +7,8 @@ part of 'properties.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Unknown _$UnknownFromJson(Map<String, dynamic> json) => Unknown($type: json['category'] as String?);
+Unknown _$UnknownFromJson(Map<String, dynamic> json) =>
+    Unknown($type: json['category'] as String?);
 
 Map<String, dynamic> _$UnknownToJson(Unknown instance) => <String, dynamic>{
   'category': instance.$type,

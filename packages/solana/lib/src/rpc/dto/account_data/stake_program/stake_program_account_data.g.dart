@@ -1,5 +1,5 @@
-// @dart=3.9
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// @dart=3.9
 
 part of 'stake_program_account_data.dart';
 
@@ -10,7 +10,9 @@ part of 'stake_program_account_data.dart';
 StakeProgramDelegatedAccountData _$StakeProgramDelegatedAccountDataFromJson(
   Map<String, dynamic> json,
 ) => StakeProgramDelegatedAccountData(
-  info: StakeDelegatedAccountInfo.fromJson(json['info'] as Map<String, dynamic>),
+  info: StakeDelegatedAccountInfo.fromJson(
+    json['info'] as Map<String, dynamic>,
+  ),
   $type: json['type'] as String?,
 );
 
@@ -21,7 +23,9 @@ Map<String, dynamic> _$StakeProgramDelegatedAccountDataToJson(
 StakeProgramInitializedAccountData _$StakeProgramInitializedAccountDataFromJson(
   Map<String, dynamic> json,
 ) => StakeProgramInitializedAccountData(
-  info: StakeInitializedAccountInfo.fromJson(json['info'] as Map<String, dynamic>),
+  info: StakeInitializedAccountInfo.fromJson(
+    json['info'] as Map<String, dynamic>,
+  ),
   $type: json['type'] as String?,
 );
 
