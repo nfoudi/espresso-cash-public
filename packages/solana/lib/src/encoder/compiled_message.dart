@@ -16,7 +16,7 @@ import 'package:solana/src/encoder/transaction_version.dart';
 part 'compiled_message.freezed.dart';
 
 @freezed
-sealed class CompiledMessage with _$CompiledMessage {
+abstract class CompiledMessage with _$CompiledMessage {
   factory CompiledMessage(ByteArray data) => switch (TransactionVersion.fromByteArray(data)) {
     TransactionVersion.legacy => _decompileLegacy(data),
     TransactionVersion.v0 => _decodeV0(data),
