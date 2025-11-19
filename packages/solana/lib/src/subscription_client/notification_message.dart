@@ -11,7 +11,7 @@ part 'notification_message.freezed.dart';
 part 'notification_message.g.dart';
 
 @Freezed(unionKey: 'method', fallbackUnion: 'unsupported')
-abstract class NotificationMessage with _$NotificationMessage implements SubscriptionMessage {
+sealed class NotificationMessage with _$NotificationMessage implements SubscriptionMessage {
   const NotificationMessage._();
 
   const factory NotificationMessage.unsupported() = _UnsupportedNotification;

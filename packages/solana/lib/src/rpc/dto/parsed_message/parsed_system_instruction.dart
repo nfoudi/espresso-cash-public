@@ -6,7 +6,7 @@ part 'parsed_system_instruction.g.dart';
 
 /// An instruction that is part if a `ParsedInstruction`
 @Freezed(unionKey: 'type', fallbackUnion: 'unsupported')
-abstract class ParsedSystemInstruction with _$ParsedSystemInstruction {
+sealed class ParsedSystemInstruction with _$ParsedSystemInstruction {
   /// Transfer instruction data for a transfer of `info.lamports` from
   /// `info.source` to `info.destination`.
   const factory ParsedSystemInstruction.transfer({
